@@ -1,0 +1,70 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bull-content {
+  min-height: 50vh;
+  background-color: rgb(238, 85, 85);
+}
+
+.bull-element {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(23, 255, 2);
+  border-radius: 50%;
+  animation-name: bull-right;
+  animation-duration: 2s;
+  transform: translateX(500px);
+}
+
+@keyframes bull-right {
+  10% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+.form-content {
+  min-height: 100%;
+  background-color: rgb(65, 27, 235);
+  display: flex;
+  justify-content: center;
+}
+
+.registr-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(216, 22, 223);
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+.input {
+  padding: 10px;
+  color: rgb(0, 60, 255);
+  background-color: rgb(150, 67, 228);
+  border-radius: 10px;
+}
+
+.input::placeholder {
+  text-transform: uppercase;
+  color: rgb(0, 60, 255);
+}
+
+.form-button {
+  padding: 5px 14px;
+  color: rgb(0, 60, 255);
+  background-color: rgb(150, 67, 228);
+  border-radius: 10px;
+}
+
+.form-button,
+.input {
+  outline: none;
+}
