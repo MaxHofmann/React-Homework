@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 class CustomInput extends Component {
   render() {
-    const {type, place} = this.props
+    const {type, value, onChange, readOnly} = this.props
     return (
       <div>
         <input
         type={type}
-        placeholder={place}
-        className='input'
+        value={value}
+        onChange={onChange}
+        readOnly={readOnly}
         />
       </div>
     )
