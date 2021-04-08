@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 
-import CustomInput from './Input.jsx';
-import CustomButton from './Button.jsx';
-import './style.css';
+import CustomInput from '../Input.jsx';
 
-class Form extends Component {
-
+class SignUpForm extends Component {
   render() {
     return (
       <div className="container">
         <div className="form-content">
           <form className='registr-form'>
-            <h2>Sing up</h2>
+          <h2>Sign up</h2>
           <CustomInput place="Enter name" type='text'/>
           <CustomInput place="Enter email" type='email'/>
           <CustomInput place="Enter password" type='password'/>
-          <CustomButton/>
+          <CustomInput place="Enter again" type='password'/>
         </form>
         </div>
       </div>
@@ -23,4 +20,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default SignUpForm;
